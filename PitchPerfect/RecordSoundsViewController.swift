@@ -23,13 +23,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        stopRecordingButton.isEnabled = false
+        configureUI(false)
     }
 
     @IBAction func reacordAction(_ sender: Any) {
-        rcordingLabel.text = "Recording in Progress"
-        stopRecordingButton.isEnabled = true
-        recordButton.isEnabled = false
+        configureUI(true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
@@ -47,14 +45,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopRecording(_ sender: Any) {
-        stopRecordingButton.isEnabled = false
-        recordButton.isEnabled = true
-        rcordingLabel.text = "Tap to Record"
+        configureUI(false)
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
     }
     
+    // MARK: - Audio Recorder Delegate
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
@@ -68,6 +65,18 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             let playSoundsVC = segue.destination as! PlaySoundsViewController
             let recorderAudioURL = sender as! URL
             playSoundsVC.recordedAudioURL = recorderAudioURL
+        }
+    }
+    
+    func configureUI(_ recording: Bool) {
+        if recording {
+            rcordingLabel.text = "Recording in Progress"
+            stopRecordingButton.isEnabled = true
+            recordButton.isEnabled = false
+        } else {
+            stopRecordingButton.isEnabled = false
+            recordButton.isEnabled = true
+            rcordingLabel.text = "Tap to Record"
         }
     }
     

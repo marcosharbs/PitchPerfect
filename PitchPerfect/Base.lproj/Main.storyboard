@@ -91,8 +91,11 @@
                                                                 <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="WsJ-pX-Kyy"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2C-X9-0dq" userLabel="Fast Button">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2C-X9-0dq" userLabel="Fast Button">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="173"/>
                                                         <state key="normal" image="Fast"/>
                                                         <userDefinedRuntimeAttributes>
@@ -100,13 +103,16 @@
                                                                 <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="MSe-e8-QLJ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-HJ-t97">
                                                 <rect key="frame" x="0.0" y="173" width="375" height="173"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzL-9p-x0H" userLabel="High Button">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzL-9p-x0H" userLabel="High Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="173"/>
                                                         <state key="normal" image="HighPitch"/>
                                                         <userDefinedRuntimeAttributes>
@@ -114,8 +120,11 @@
                                                                 <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="iEl-5M-78M"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTJ-EZ-TA3" userLabel="Low Button">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTJ-EZ-TA3" userLabel="Low Button">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="173"/>
                                                         <state key="normal" image="LowPitch"/>
                                                         <userDefinedRuntimeAttributes>
@@ -123,13 +132,16 @@
                                                                 <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="Jfa-y8-OF6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IAm-W7-pd2">
                                                 <rect key="frame" x="0.0" y="346" width="375" height="173"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-sn-26x" userLabel="Echo Button">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-sn-26x" userLabel="Echo Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="173"/>
                                                         <state key="normal" image="Echo"/>
                                                         <userDefinedRuntimeAttributes>
@@ -137,8 +149,11 @@
                                                                 <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="QFj-60-L1a"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IH-Ch-436" userLabel="Reverb Button">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IH-Ch-436" userLabel="Reverb Button">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="173"/>
                                                         <state key="normal" image="Reverb"/>
                                                         <userDefinedRuntimeAttributes>
@@ -146,6 +161,9 @@
                                                                 <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="GBT-nC-zWQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -166,6 +184,9 @@
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="HdY-iQ-2xx" eventType="touchUpInside" id="LRC-hi-GKi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -181,6 +202,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VeE-O8-mtm"/>
                     </view>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="fzL-9p-x0H" id="w2o-FY-E0I"/>
+                        <outlet property="echoButton" destination="6EU-sn-26x" id="16o-l4-f4N"/>
+                        <outlet property="rabbitButton" destination="w2C-X9-0dq" id="dWu-qM-23Q"/>
+                        <outlet property="reverbButton" destination="5IH-Ch-436" id="s0g-iH-Byi"/>
+                        <outlet property="snailButton" destination="Ege-MY-VeO" id="ZLk-gT-QCB"/>
+                        <outlet property="stopButton" destination="Bu2-To-Rm7" id="QZc-tM-uO6"/>
+                        <outlet property="vaderButton" destination="iTJ-EZ-TA3" id="qTj-tV-4es"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUw-5p-V9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
