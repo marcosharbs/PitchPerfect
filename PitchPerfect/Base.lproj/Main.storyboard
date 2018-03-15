@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlL-fb-b4K">
-                                <rect key="frame" x="110" y="256" width="155" height="155"/>
+                                <rect key="frame" x="110" y="211" width="155" height="155"/>
                                 <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="reacordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ad-vV-3RJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlQ-Kv-n3O">
-                                <rect key="frame" x="134.5" y="428" width="106.5" height="21"/>
+                                <rect key="frame" x="134.5" y="383" width="106.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piR-X1-o7d">
-                                <rect key="frame" x="155" y="468" width="64" height="64"/>
+                                <rect key="frame" x="155" y="423" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Pyj-zk-GMv"/>
                                     <constraint firstAttribute="width" constant="64" id="eEa-dQ-TZ9"/>
@@ -47,7 +47,7 @@
                         <constraints>
                             <constraint firstItem="piR-X1-o7d" firstAttribute="centerX" secondItem="JlQ-Kv-n3O" secondAttribute="centerX" id="Eck-wC-inI"/>
                             <constraint firstItem="JlQ-Kv-n3O" firstAttribute="top" secondItem="mlL-fb-b4K" secondAttribute="bottom" constant="17" id="HEj-vw-8AC"/>
-                            <constraint firstItem="mlL-fb-b4K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hfz-dN-jai"/>
+                            <constraint firstItem="mlL-fb-b4K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="Hfz-dN-jai"/>
                             <constraint firstItem="JlQ-Kv-n3O" firstAttribute="centerX" secondItem="mlL-fb-b4K" secondAttribute="centerX" id="X31-dS-WJd"/>
                             <constraint firstItem="mlL-fb-b4K" firstAttribute="centerX" secondItem="qcA-3C-fFY" secondAttribute="centerX" id="aE7-G8-hAr"/>
                             <constraint firstItem="piR-X1-o7d" firstAttribute="top" secondItem="JlQ-Kv-n3O" secondAttribute="bottom" constant="19" id="vYX-d7-O8f"/>
